@@ -1,0 +1,41 @@
+{
+  "name": "CitifydSDK",
+  "version": "1.0.0",
+  "summary": "Citifyd SDK for iOS.",
+  "description": "With the Citifyd SDK for iOS, you can embed Citifyd Parking into your application.",
+  "homepage": "https://www.citifyd.com/",
+  "license": {
+    "type": "Copyright",
+    "text": "Copyright 2017 Citifyd"
+  },
+  "authors": "Citifyd",
+  "source": {
+    "http": "https://dl.google.com/geosdk/googlemaps-ios-1.0.1.zip",
+    "flatten": true
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "CitifydSDK.framework/Headers/*.h",
+  "preserve_paths": "CitifydSDK.framework",
+  "header_dir": "CitifydSDK",
+  "frameworks": [
+    "CitifydSDK",
+    "AVFoundation",
+    "CoreData",
+    "CoreLocation",
+    "CoreText",
+    "GLKit",
+    "ImageIO",
+    "OpenGLES",
+    "QuartzCore",
+    "SystemConfiguration"
+  ],
+  "libraries": [
+    "Cordova"
+  ],
+  "xcconfig": {
+    "FRAMEWORK_SEARCH_PATHS": "\"$(PODS_ROOT)/CitifydSDK\""
+  },
+  "requires_arc": false
+}
