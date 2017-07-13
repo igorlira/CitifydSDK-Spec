@@ -10,7 +10,7 @@
   },
   "authors": "Citifyd",
   "source": {
-    "http": "https://dl.google.com/geosdk/googlemaps-ios-1.0.1.zip",
+    "http": "http://192.168.15.240:8000/Archive.zip",
     "flatten": true
   },
   "platforms": {
