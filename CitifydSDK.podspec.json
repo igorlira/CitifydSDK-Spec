@@ -1,6 +1,6 @@
 {
   "name": "CitifydSDK",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "summary": "Citifyd SDK for iOS.",
   "description": "With the Citifyd SDK for iOS, you can embed Citifyd Parking into your application.",
   "homepage": "https://www.citifyd.com/",
@@ -10,14 +10,14 @@
   },
   "authors": "Citifyd",
   "source": {
-    "http": "http://192.168.15.240:8000/Archive.zip",
+    "http": "https://s3-us-west-2.amazonaws.com/citifydsandbox/CitifydSDK-1.0.3.zip",
     "flatten": true
   },
   "platforms": {
     "ios": "8.0"
   },
   "source_files": "CitifydSDK.framework/Headers/*.h",
-  "preserve_paths": "CitifydSDK.framework",
+  "preserve_paths": ["CitifydSDK.framework", "libCordova.a"],
   "header_dir": "CitifydSDK",
   "frameworks": [
     "CitifydSDK",
@@ -31,9 +31,7 @@
     "QuartzCore",
     "SystemConfiguration"
   ],
-  "libraries": [
-    "Cordova"
-  ],
+  "vendored_frameworks": ["CitifydSDK.framework", "Cordova.framework"],
   "xcconfig": {
     "FRAMEWORK_SEARCH_PATHS": "\"$(PODS_ROOT)/CitifydSDK\""
   },
